@@ -2,6 +2,7 @@ import { Navbar } from '@/components/Navbar';
 import './globals.css';
 import { Poppins, Roboto } from 'next/font/google';
 import { AOSInit } from '@/AOSInit';
+import { Footer } from '@/components/Footer';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -30,6 +31,7 @@ export default function RootLayout({ children }) {
         <body className={`${roboto.className} ${poppins.className} `}>
           <Navbar />
           {children}
+          <Footer />
         </body>
       </html>
     </>
