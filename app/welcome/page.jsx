@@ -7,7 +7,6 @@ import { poppins } from '@/utils/font';
 import { useUser } from '@clerk/nextjs';
 const Home = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isEmailSent, setIsEmailSent] = useState(false);
 
   const { user } = useUser();
 
