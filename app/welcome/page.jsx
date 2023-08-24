@@ -7,6 +7,8 @@ import { poppins } from '@/utils/font';
 import { useUser } from '@clerk/nextjs';
 const Home = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isEmailSent, setIsEmailSent] = useState(false);
+
   const { user } = useUser();
 
   useEffect(() => {
@@ -15,6 +17,7 @@ const Home = () => {
       const email = user?.primaryEmailAddress?.emailAddress;
       const response = await axios.post('/api/register', { email });
       console.log(response);
+      // localStorage.setItem('isEmailSent', 'true');
     };
     if (user?.primaryEmailAddress?.emailAddress) {
       sendEmail();

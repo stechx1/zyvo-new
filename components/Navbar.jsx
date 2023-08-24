@@ -2,11 +2,10 @@
 import { Button } from './Button';
 import { useRouter } from 'next/navigation';
 import { Container } from './Container';
-import { UserButton, useUser } from '@clerk/nextjs';
+import { UserButton, useUser, SignedIn, SignedOut } from '@clerk/nextjs';
 
 /* eslint-disable @next/next/no-img-element */
 export const Navbar = () => {
-  const { isSignedIn } = useUser();
 
   const router = useRouter();
   return (
@@ -24,11 +23,10 @@ export const Navbar = () => {
             <Button onClick={() => router.push('/about')} type='secondary'>
               About Us
             </Button>
-            {isSignedIn ? (
-              <>
-                <UserButton afterSignOutUrl='/' />
-              </>
-            ) : (
+            <SignedIn>
+              <UserButton afterSignOutUrl='/' />
+            </SignedIn>
+            <SignedOut>
               <Button
                 onClick={() => {
                   router.push('/sign-up');
@@ -36,7 +34,7 @@ export const Navbar = () => {
               >
                 Sign Up
               </Button>
-            )}
+            </SignedOut>
           </div>
         </div>
       </Container>
