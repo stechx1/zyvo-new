@@ -12,8 +12,8 @@ const Home = () => {
   const { user } = useUser();
 
   useEffect(() => {
-    console.log(Boolean(user?.primaryEmailAddress?.emailAddress));
     const sendEmail = async () => {
+      console.log(Boolean(user?.primaryEmailAddress?.emailAddress));
       const email = user?.primaryEmailAddress?.emailAddress;
       const response = await axios.post('/api/register', { email });
       console.log(response);
