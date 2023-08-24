@@ -54,22 +54,22 @@ const AboutPage = () => {
         />
       </div>
 
-      <div
-        data-aos='fade-up'
-        className='flex flex-col gap-4 my-24 justify-center items-center'
-      >
-        <img src='/icons/icon.png' alt='logo' />
-        <span className='text-center font-[400]  max-w-[550px]'>
-          Join ZYVO today and unlock a world of hourly spaces, where EVERY
-          MOMENT IS YOURS
-        </span>
+      {isSignedIn && (
+        <div
+          data-aos='fade-up'
+          className='flex flex-col gap-4 my-24 justify-center items-center'
+        >
+          <img src='/icons/icon.png' alt='logo' />
+          <span className='text-center font-[400]  max-w-[550px]'>
+            Join ZYVO today and unlock a world of hourly spaces, where EVERY
+            MOMENT IS YOURS
+          </span>
 
-        {isSignedIn && (
           <Button onClick={() => setSignupModal(true)}>
             Create your ZYVO account
           </Button>
-        )}
-      </div>
+        </div>
+      )}
     </>
   );
 };

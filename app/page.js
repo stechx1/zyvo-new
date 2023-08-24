@@ -8,14 +8,12 @@ import {
   ShortTermSection,
 } from '@/collections';
 
-import { useState } from 'react';
-// import {
-//   useUser
-// } from '@clerk/nextjs';
+import {
+  useUser
+} from '@clerk/nextjs';
 
 export default function Home() {
-  // const {isSignedIn } = useUser();
-  var isSignedIn = false;
+  const {isSignedIn } = useUser();
   return (
     <>
       <div className='bg-[url("/banner-bg.png")] bg-cover bg-center flex flex-col justify-center items-center '>
