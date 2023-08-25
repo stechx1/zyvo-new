@@ -4,9 +4,11 @@
 import { AboutBox } from '@/components/AboutBox';
 import { AboutSection } from '@/collections/AboutSection';
 import { Button } from '@/components';
+import { useRouter } from 'next/navigation';
+import { SignedOut } from '@clerk/nextjs';
 
 const AboutPage = () => {
-  var isSignedIn = false;
+  const router = useRouter();
   return (
     <>
       <div className='bg-[url("/banner-bg.png")] bg-cover bg-center flex flex-col justify-center items-center '>
@@ -54,7 +56,7 @@ const AboutPage = () => {
         />
       </div>
 
-      {isSignedIn && (
+      <SignedOut>
         <div
           data-aos='fade-up'
           className='flex flex-col gap-4 my-24 justify-center items-center'
@@ -65,11 +67,11 @@ const AboutPage = () => {
             MOMENT IS YOURS
           </span>
 
-          <Button onClick={() => setSignupModal(true)}>
+          <Button onClick={() => router.push('/sign-up')}>
             Create your ZYVO account
           </Button>
         </div>
-      )}
+      </SignedOut>
     </>
   );
 };

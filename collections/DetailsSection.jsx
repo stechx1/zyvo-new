@@ -1,10 +1,12 @@
 'use client';
 import { Button, Container } from '@/components';
 import { poppins } from '@/utils/font';
+import { useRouter } from 'next/navigation';
 
 export const DetailsSection = ({
   isLoggedIn
 }) => {
+  const router = useRouter();
   return (
     <Container>
       <div
@@ -35,7 +37,7 @@ export const DetailsSection = ({
           </div>
         </div>
         {!isLoggedIn && (
-          <Button onClick={() => setSignupModal(true)}>
+          <Button onClick={() => router.push("/sign-up")}>
             Create your ZYVO account
           </Button>
         )}
