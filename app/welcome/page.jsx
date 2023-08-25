@@ -18,9 +18,9 @@ const Home = () => {
       console.log(response);
       // localStorage.setItem('isEmailSent', 'true');
     };
-    if (user?.primaryEmailAddress?.emailAddress) {
-      sendEmail();
-    }
+    // if (user?.primaryEmailAddress?.emailAddress) {
+    //   sendEmail();
+    // }
     setIsModalOpen(true);
   }, [user]);
 
