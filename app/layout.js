@@ -3,8 +3,8 @@ import './globals.css';
 import { Poppins, Roboto } from 'next/font/google';
 import { AOSInit } from '@/AOSInit';
 import { Footer } from '@/components/Footer';
-import StyledComponentsRegistry from '@/lib/AntRegistry';
 import { ClerkProvider } from '@clerk/nextjs';
+import PageLayout from '@/components/Layout';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -31,11 +31,7 @@ export default function RootLayout({ children }) {
       <AOSInit />
       <html lang='en'>
         <body className={`${roboto.className} ${poppins.className} `}>
-          <StyledComponentsRegistry>
-            <Navbar />
-            {children}
-            <Footer />
-          </StyledComponentsRegistry>
+          <PageLayout>{children}</PageLayout>
         </body>
       </html>
     </ClerkProvider>
