@@ -1,44 +1,35 @@
 'use client';
 import React, { useEffect, useState } from 'react';
-import { Modal } from 'antd';
 import axios from 'axios';
 import { Button } from '@/components';
 import { poppins } from '@/utils/font';
 import { useUser } from '@clerk/nextjs';
+import { Modal } from '@/components/Modal';
 const Home = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
   const { user } = useUser();
 
   useEffect(() => {
     const sendEmail = async () => {
-      console.log(Boolean(user?.primaryEmailAddress?.emailAddress));
       const email = user?.primaryEmailAddress?.emailAddress;
       const response = await axios.post('/api/register', { email });
       console.log(response);
-      // localStorage.setItem('isEmailSent', 'true');
     };
-    if (user?.primaryEmailAddress?.emailAddress) {
+
+    // Retrieve the list of emails from local storage
+    const sentEmails = JSON.parse(localStorage.getItem('sentEmails')) || [];
+
+    if (user?.primaryEmailAddress?.emailAddress && !sentEmails.includes(user.primaryEmailAddress.emailAddress)) {
       sendEmail();
+
+      // Add the current email to the list and update local storage
+      sentEmails.push(user.primaryEmailAddress.emailAddress);
+      localStorage.setItem('sentEmails', JSON.stringify(sentEmails));
     }
-    setIsModalOpen(true);
   }, [user]);
 
-  const handleOk = () => {
-    setIsModalOpen(false);
-  };
-  const handleCancel = () => {
-    setIsModalOpen(false);
-  };
   return (
     <div className=''>
-      {/* <Modal
-        title='Welcome to the Zyvo universe'
-        open={isModalOpen}
-        onOk={handleOk}
-        onCancel={handleCancel}
-        footer={<Button onClick={handleCancel}>Done</Button>}
-      >
+      <Modal>
         <p>
           Thank you for signing up with Zyvo! We&apos;re excited to have you on
           board. Our website is coming soon, and we&apos;ll keep you updated on
@@ -49,7 +40,7 @@ const Home = () => {
           <p>Best Regards,</p>
           <p>The Zyvo Team</p>
         </div>
-      </Modal> */}
+      </Modal>
 
       <div className='container mx-auto flex flex-col my-16  justify-center items-center'>
         <p className='text-lg font-bold'>Its Official!</p>
