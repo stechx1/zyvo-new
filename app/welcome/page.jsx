@@ -32,7 +32,7 @@ const Home = () => {
   };
   return (
     <div className=''>
-      <Modal
+      {/* <Modal
         title='Welcome to the Zyvo universe'
         open={isModalOpen}
         onOk={handleOk}
@@ -49,7 +49,7 @@ const Home = () => {
           <p>Best Regards,</p>
           <p>The Zyvo Team</p>
         </div>
-      </Modal>
+      </Modal> */}
 
       <div className='container mx-auto flex flex-col my-16  justify-center items-center'>
         <p className='text-lg font-bold'>Its Official!</p>
