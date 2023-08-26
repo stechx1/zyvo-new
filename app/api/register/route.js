@@ -19,7 +19,7 @@ export async function POST(req, res) {
     const mailOptions = {
       from: process.env.NEXT_PUBLIC_EMAIL,
       to: body.email,
-      subject: 'Welcome to Our App!',
+      subject: 'Welcome to the Zyvo Universe!',
       text: 'Thank you for signing up for our app. We are excited to have you on board!',
       html: `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office"><head><meta charset="UTF-8"><meta content="width=device-width, initial-scale=1" name="viewport"><meta name="x-apple-disable-message-reformatting"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta content="telephone=no" name="format-detection"><title></title><!--[if (mso 16)]>
       <style type="text/css">
