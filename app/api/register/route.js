@@ -45,11 +45,11 @@ export async function POST(req, res) {
               </td>
           </tr></tbody></table></td></tr></tbody></table><!--[if mso]></td><td width="20"></td><td width="360" valign="top"><![endif]--><table class="es-right" cellspacing="0" cellpadding="0" align="right"><tbody><tr><td class="esd-container-frame" width="360" align="left"><table width="100%" cellspacing="0" cellpadding="0"><tbody><tr><td class="esd-empty-container" style="display: none;" align="center"></td></tr></tbody></table></td></tr></tbody></table><!--[if mso]></td></tr></table><![endif]--></td></tr></tbody></table></td></tr></tbody></table><table class="es-content" cellspacing="0" cellpadding="0" align="center"><tbody><tr><td class="esd-stripe" align="center"><table class="es-content-body" width="600" cellspacing="0" cellpadding="0" bgcolor="#ffffff" align="center"><tbody><tr><td class="es-p20t es-p20r es-p20l esd-structure" align="left"><table width="100%" cellspacing="0" cellpadding="0"><tbody><tr><td class="esd-container-frame es-p85t" width="560" valign="top" align="center"><table width="100%" cellspacing="0" cellpadding="0"><tbody><tr>
               <td align="left" class="esd-block-text">
-                  <p><strong><em style="font-family:helvetica,&#39;helvetica neue&#39;,arial,verdana,sans-serif">It's Official!</em></strong></p>
+                  <p><strong><em style="font-family:helvetica,&#39;helvetica neue&#39;,arial,verdana,sans-serif; text-align: center">It's Official!</em></strong></p>
               </td>
           </tr><tr>
               <td align="left" class="esd-block-text">
-                  <h1 style="text-align: center;"><strong style="font-family:helvetica,&#39;helvetica neue&#39;,arial,verdana,sans-serif">You're now part of <span style="color:#48eab1">Zyvo Universe</span></strong></h1>
+                  <h1><strong style="font-family:helvetica,&#39;helvetica neue&#39;,arial,verdana,sans-serif">You're now part of <span style="color:#48eab1">Zyvo Universe</span></strong></h1>
               </td>
           </tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table><table class="esd-footer-popover es-footer" cellspacing="0" cellpadding="0" align="center"><tbody><tr><td class="esd-stripe" align="center"><table class="es-footer-body" width="600" cellspacing="0" cellpadding="0" bgcolor="#ffffff" align="center"><tbody><tr><td class="esd-structure es-p20b es-p20r es-p20l es-p50t" align="left"><table class="es-right" cellspacing="0" cellpadding="0" align="right"><tbody><tr><td class="esd-container-frame" width="560" align="left"><table width="100%" cellspacing="0" cellpadding="0"><tbody><tr>
               <td align="left" class="esd-block-text">
