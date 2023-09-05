@@ -103,9 +103,9 @@ export const Footer = () => {
               <p className='text-[#ffffff99]'>Zyvo © Copyright 2023</p>
               <img src='icons/white-logo.svg' alt='logo' />
               <div className='flex gap-2 text-[#ffffff99]'>
-                <Link href='/'>Privacy Policy</Link>
+                <Link href='/privacy'>Privacy Policy</Link>
                 <p>|</p>
-                <Link href='/'>Terms of Service</Link>
+                <Link href='/terms-of-service'>Terms of Service</Link>
               </div>
             </div>
           </div>
