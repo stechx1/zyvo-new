@@ -18,7 +18,7 @@ const TermsPage = () => {
           </p>
           <div className='flex flex-col gap-4'>
             <div className='flex flex-col gap-1'>
-              <h2 className='font-bold text-xl'>{`1. User Responsibilities:`}</h2>
+              <h2 className='font-bold text-lg'>{`1. User Responsibilities:`}</h2>
               <ul className='list-disc ml-6'>
                 <li>You must be at least 18 years old to use Zyvo.</li>
                 <li>
@@ -34,7 +34,7 @@ const TermsPage = () => {
             </div>
 
             <div className='flex flex-col gap-1'>
-              <h2 className='font-bold text-xl'>{`2) Rental Listings and Bookings:`}</h2>
+              <h2 className='font-bold text-lg'>{`2) Rental Listings and Bookings:`}</h2>
               <ul className='list-disc ml-6'>
                 <li>
                   Zyvo allows users to list and book hourly rentals. As a
@@ -54,7 +54,7 @@ const TermsPage = () => {
             </div>
 
             <div className='flex flex-col gap-1'>
-              <h2 className='font-bold text-xl'>{`3) Prohibited Activities:`}</h2>
+              <h2 className='font-bold text-lg'>{`3) Prohibited Activities:`}</h2>
               <ul className='list-disc ml-6'>
                 <li>
                   You may not use Zyvo for any illegal or unauthorized purpose.
@@ -71,7 +71,7 @@ const TermsPage = () => {
             </div>
 
             <div className='flex flex-col gap-1'>
-              <h2 className='font-bold text-xl'>{`4) Intellectual Property:`}</h2>
+              <h2 className='font-bold text-lg'>{`4) Intellectual Property:`}</h2>
               <ul className='list-disc ml-6'>
                 <li>
                   {`Zyvo and its content are protected by copyright, trademark,
@@ -83,7 +83,7 @@ const TermsPage = () => {
             </div>
 
             <div className='flex flex-col gap-1'>
-              <h2 className='font-bold text-xl'>{`5) Limitation of Liability:`}</h2>
+              <h2 className='font-bold text-lg'>{`5) Limitation of Liability:`}</h2>
               <ul className='list-disc ml-6'>
                 <li>
                   Zyvo is not responsible for any damages, losses, or
@@ -98,7 +98,7 @@ const TermsPage = () => {
             </div>
 
             <div className='flex flex-col gap-1'>
-              <h2 className='font-bold text-xl'>{`6) Indemnification:`}</h2>
+              <h2 className='font-bold text-lg'>{`6) Indemnification:`}</h2>
               <ul className='list-disc ml-6'>
                 <li>
                   You agree to indemnify and hold Zyvo harmless from any claims,
@@ -109,7 +109,7 @@ const TermsPage = () => {
             </div>
 
             <div className='flex flex-col gap-1'>
-              <h2 className='font-bold text-xl'>{`7) Termination:`}</h2>
+              <h2 className='font-bold text-lg'>{`7) Termination:`}</h2>
               <ul className='list-disc ml-6'>
                 <li>
                   Zyvo may terminate or suspend your access to the platform at
@@ -119,7 +119,7 @@ const TermsPage = () => {
             </div>
 
             <div className='flex flex-col gap-1'>
-              <h2 className='font-bold text-xl'>{`8) Governing Laws:`}</h2>
+              <h2 className='font-bold text-lg'>{`8) Governing Laws:`}</h2>
               <ul className='list-disc ml-6'>
                 <li>
                   These Terms are governed by and construed in accordance with

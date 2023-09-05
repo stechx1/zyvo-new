@@ -19,7 +19,7 @@ const PrivacyPage = () => {
           </p>
           <div className='flex flex-col gap-4'>
             <div className='flex flex-col gap-1'>
-              <h2 className='font-bold text-xl'>{`1) Information We Collect:`}</h2>
+              <h2 className='font-bold text-lg'>{`1) Information We Collect:`}</h2>
               <ul className='list-disc ml-6'>
                 <li>
                   <span className='font-bold'>Personal Information:</span> When
@@ -40,7 +40,7 @@ const PrivacyPage = () => {
             </div>
 
             <div className='flex flex-col gap-1'>
-              <h2 className='font-bold text-xl'>{`2) How We Use Your Information:`}</h2>
+              <h2 className='font-bold text-lg'>{`2) How We Use Your Information:`}</h2>
               <ul className='list-disc ml-6'>
                 <li>
                   <span className='font-bold'>Provide Services:</span> We use
@@ -67,7 +67,7 @@ const PrivacyPage = () => {
             </div>
 
             <div className='flex flex-col gap-1'>
-              <h2 className='font-bold text-xl'>{`3) Data Sharing:`}</h2>
+              <h2 className='font-bold text-lg'>{`3) Data Sharing:`}</h2>
               <ul className='list-disc ml-6'>
                 <li>
                   <span className='font-bold'>Service Providers:</span> We may
@@ -89,7 +89,7 @@ const PrivacyPage = () => {
             </div>
 
             <div className='flex flex-col gap-1'>
-              <h2 className='font-bold text-xl'>{`4) Data Security:`}</h2>
+              <h2 className='font-bold text-lg'>{`4) Data Security:`}</h2>
               <ul className='list-disc ml-6'>
                 <li>
                   We implement industry-standard security measures to protect
@@ -105,7 +105,7 @@ const PrivacyPage = () => {
             </div>
 
             <div className='flex flex-col gap-1'>
-              <h2 className='font-bold text-xl'>{`5) Third-Party Links:`}</h2>
+              <h2 className='font-bold text-lg'>{`5) Third-Party Links:`}</h2>
               <ul className='list-disc ml-6'>
                 <li>
                   Zyvo may contain links to third-party websites or services. We
@@ -117,7 +117,7 @@ const PrivacyPage = () => {
             </div>
 
             <div className='flex flex-col gap-1'>
-              <h2 className='font-bold text-xl'>{`6) Children's Privacy:`}</h2>
+              <h2 className='font-bold text-lg'>{`6) Children's Privacy:`}</h2>
               <ul className='list-disc ml-6'>
                 <li>
                   Zyvo is not intended for use by individuals under the age of
@@ -129,7 +129,7 @@ const PrivacyPage = () => {
             </div>
 
             <div className='flex flex-col gap-1'>
-              <h2 className='font-bold text-xl'>{`7) Changes to Privacy Policy:`}</h2>
+              <h2 className='font-bold text-lg'>{`7) Changes to Privacy Policy:`}</h2>
               <ul className='list-disc ml-6'>
                 <li>
                   We may update this Privacy Policy from time to time. Any
