@@ -1,8 +1,9 @@
 'use client';
+import { Container } from '@/components';
 import { poppins } from '@/utils/font';
 const TermsPage = () => {
   return (
-    <div className=''>
+    <Container>
       <div className='container mx-auto flex flex-col my-8  justify-center items-center'>
         <h2
           className={`text-center font-bold text-4xl my-4 ${poppins.className}`}
@@ -137,7 +138,7 @@ const TermsPage = () => {
           </p>
         </div>
       </div>
-    </div>
+    </Container>
   );
 };
 

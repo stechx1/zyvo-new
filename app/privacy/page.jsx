@@ -1,9 +1,10 @@
 'use client';
+import { Container } from '@/components';
 import { poppins } from '@/utils/font';
 const PrivacyPage = () => {
   return (
-    <div className=''>
-      <div className='container mx-auto flex flex-col my-8  justify-center items-center'>
+    <Container>
+      <div className='flex flex-col my-8  justify-center items-center'>
         <h2
           className={`text-center font-bold text-4xl my-4 ${poppins.className}`}
         >
@@ -142,11 +143,12 @@ const PrivacyPage = () => {
 
           <p>
             If you have any questions or concerns about our Privacy Policy,
-            please contact us at [email address].
+            please contact us at{' '}
+            <span className='font-bold'>support@zyvoapp.com</span>
           </p>
         </div>
       </div>
-    </div>
+    </Container>
   );
 };
 export default PrivacyPage;
