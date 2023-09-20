@@ -1,10 +1,9 @@
-import { Navbar } from '@/components/Navbar';
 import './globals.css';
 import { Poppins, Roboto } from 'next/font/google';
 import { AOSInit } from '@/AOSInit';
-import { Footer } from '@/components/Footer';
 import { ClerkProvider } from '@clerk/nextjs';
 import PageLayout from '@/components/Layout';
+import FacebookPixel from '@/components/FacebookPixel';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -32,6 +31,7 @@ export default function RootLayout({ children }) {
       <html lang='en'>
         <body className={`${roboto.className} ${poppins.className} `}>
           <PageLayout>{children}</PageLayout>
+          <FacebookPixel />
         </body>
       </html>
     </ClerkProvider>
