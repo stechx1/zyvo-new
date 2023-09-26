@@ -4,6 +4,7 @@ import { AOSInit } from '@/AOSInit';
 import { ClerkProvider } from '@clerk/nextjs';
 import PageLayout from '@/components/Layout';
 import FacebookPixel from '@/components/FacebookPixel';
+import Analytics from '@/components/Analytics';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -30,6 +31,7 @@ export default function RootLayout({ children }) {
       <AOSInit />
       <html lang='en'>
         <body className={`${roboto.className} ${poppins.className} `}>
+          <Analytics />
           <PageLayout>{children}</PageLayout>
           <FacebookPixel />
         </body>
