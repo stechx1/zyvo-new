@@ -8,7 +8,7 @@ export async function POST(req, res) {
 
     try {
       // Subscribe the user to Mailchimp
-      const apiKey = '81d72bba2bda26144daf5d8f1c815739-us21'; // Your MailChimp API key
+      const apiKey = 'd016bd74c068732d6f4ee4501f32a9a6-us21'; // Your MailChimp API key
       const listId = 'a63d2e77c7'; // Your MailChimp List ID
 
       const mailchimpResponse = await axios.post(
