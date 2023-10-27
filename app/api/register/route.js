@@ -1,5 +1,6 @@
 import { Response as NextResponse } from 'next';
 const axios = require('axios');
+require('dotenv').config(); // Load environment variables from .env file
 
 export async function POST(req, res) {
   if (req.method === 'POST') {
