@@ -4,7 +4,7 @@ import axios from 'axios';
 export async function POST(req, res) {
   if (req.method === 'POST') {
     const body = await req.json();
-    const { email } = body; // Assuming you have collected email
+    const { email, firstName, lastName } = body; // Assuming you have collected email, firstName, and lastName
 
     try {
       // Access environment variable directly
@@ -17,16 +17,9 @@ export async function POST(req, res) {
           email_address: email,
           status: 'subscribed',
           "merge_fields": {
-      "FNAME": "John",
-      "LNAME": "Doe",
-     
-      "ADDRESS": {
-         "addr1": "123 Freddie Ave",
-         "city": "Atlanta",
-         "state": "GA",
-         "zip": "12345"
-      }
-   },
+            "FNAME": firstName,
+            "LNAME": lastName,
+          },
         },
         {
           headers: {
