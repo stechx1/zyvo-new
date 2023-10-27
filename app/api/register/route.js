@@ -4,8 +4,8 @@ import axios from 'axios';
 export async function POST(req, res) {
   if (req.method === 'POST') {
     const body = await req.json();
-    const { email } = body;
-    const { FNAME: firstName, LNAME: lastName } = body.merge_fields; // Collect firstName and lastName
+    const { email, merge_fields } = body;
+    const { FNAME: firstName, LNAME: lastName } = merge_fields; // Collect firstName and lastName
 
     try {
       // Access environment variable directly
