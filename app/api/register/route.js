@@ -16,10 +16,17 @@ export async function POST(req, res) {
         {
           email_address: email,
           status: 'subscribed',
-          merge_fields: {
-            FNAME: '', // Set the first name as an empty string
-            ADDRESS: '123 Main St, Dummy City, DC 12345' // Add a dummy address
-          },
+          "merge_fields": {
+      "FNAME": "John",
+      "LNAME": "Doe",
+     
+      "ADDRESS": {
+         "addr1": "123 Freddie Ave",
+         "city": "Atlanta",
+         "state": "GA",
+         "zip": "12345"
+      }
+   },
         },
         {
           headers: {
