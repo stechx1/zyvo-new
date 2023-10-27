@@ -1,14 +1,14 @@
 import { Response as NextResponse } from 'next';
 import axios from 'axios';
 
-export default async function handler(req, res) {
+export async function POST(req, res) {
   if (req.method === 'POST') {
     const body = await req.json();
-    const { email, firstName } = body;
+    const { email, firstName } = body; // Assuming you have collected email and first name
 
     try {
-      // Assuming your environment variable is set directly in the hosting platform
-      const apiKey = process.env.NEXT_PUBLIC_MAILCHIMP_API; // Set on your hosting platform
+      // Access environment variable directly
+      const apiKey = process.env.NEXT_PUBLIC_MAILCHIMP_API;
       const listId = 'a63d2e77c7'; // Corrected listId
 
       const mailchimpResponse = await axios.post(
