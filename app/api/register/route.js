@@ -18,7 +18,7 @@ export async function POST(req, res) {
           status: 'subscribed',
           "merge_fields": {
             "FNAME": "Test2",
-            "LNAME": "lastName",
+            "LNAME": lastName,
           },
         },
         {
