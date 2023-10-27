@@ -1,13 +1,15 @@
+import { Response as NextResponse } from 'next';
 import axios from 'axios';
 
 export default async function handler(req, res) {
   if (req.method === 'POST') {
-    const body = JSON.parse(req.body);
+    const body = await req.json();
     const { email, firstName } = body;
 
     try {
-      const apiKey = process.env.NEXT_PUBLIC_MAILCHIMP_API;
-      const listId = 'a63d2e77c7';
+      // Assuming your environment variable is set directly in the hosting platform
+      const apiKey = process.env.NEXT_PUBLIC_MAILCHIMP_API; // Set on your hosting platform
+      const listId = 'a63d2e77c7'; // Corrected listId
 
       const mailchimpResponse = await axios.post(
         `https://us21.api.mailchimp.com/3.0/lists/${listId}/members`,
@@ -26,12 +28,12 @@ export default async function handler(req, res) {
       // Handle the response from Mailchimp
       console.log(mailchimpResponse.data);
 
-      return res.status(200).json({ message: 'User subscribed to Mailchimp' });
+      return new NextResponse('User subscribed to Mailchimp', { status: 200 });
     } catch (error) {
       console.error('Error subscribing to Mailchimp', error);
-      return res.status(500).json({ message: 'Error subscribing to Mailchimp' });
+      return new NextResponse('Error subscribing to Mailchimp', { status: 500 });
     }
   } else {
-    return res.status(405).end('Method Not Allowed');
+    console.log('Use POST');
   }
 }
