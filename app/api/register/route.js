@@ -6,7 +6,7 @@ export async function POST(req, res) {
     const body = await req.json();
     const { email, firstName } = body; // Assuming you have collected email and first name
 
-    const apiKey = process.env.NEXT_PUBLIC_MAILCHIMP_API; // Get Mailchimp API key from environment variable
+    const apiKey = c1a29bc251a1d0c40b342503588d607a-us21; // Get Mailchimp API key from environment variable
     const listId = 'a63d2e77c7'; // Your MailChimp List ID
 
     try {
