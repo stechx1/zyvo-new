@@ -1,6 +1,5 @@
-import { NextResponse } from 'next/server';
+import { Response as NextResponse } from 'next';
 const axios = require('axios');
-require('dotenv').config(); // Load environment variables from .env file
 
 export async function POST(req, res) {
   if (req.method === 'POST') {
@@ -10,7 +9,7 @@ export async function POST(req, res) {
     try {
       // Subscribe the user to Mailchimp
       const apiKey = process.env.NEXT_PUBLIC_MAILCHIMP_API;
-      const listId = a63d2e77c7;
+      const listId = 'a63d2e77c7'; // Corrected listId
 
       const mailchimpResponse = await axios.post(
         `https://us21.api.mailchimp.com/3.0/lists/${listId}/members`,
