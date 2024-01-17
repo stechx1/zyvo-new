@@ -31,6 +31,21 @@ export default function RootLayout({ children }) {
       <AOSInit />
       <html lang='en'>
         <body className={`${roboto.className} ${poppins.className} `}>
+          {/* Global Site Tag (gtag.js) - Google Analytics */}
+          <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=AW-11436521193`}
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'AW-11436521193');
+              `,
+            }}
+          />
           <Analytics />
           <PageLayout>{children}</PageLayout>
           <FacebookPixel />
