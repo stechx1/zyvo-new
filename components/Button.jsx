@@ -5,6 +5,15 @@ export const Button = ({ children, type, onClick, disabled = false }) => {
         {children}
       </button>
     );
+  } else if (type === 'outline') {
+    return (
+      <button
+        onClick={onClick}
+        className='bg-none border-[#3A4B4C] hover:bg-[#3A4B4C] hover:text-white border-[1px] rounded-full px-4 py-2 text-[#3A4B4C]'
+      >
+        {children}
+      </button>
+    );
   }
   return (
     <button
