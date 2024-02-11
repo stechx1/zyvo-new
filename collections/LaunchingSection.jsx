@@ -52,8 +52,12 @@ export const LaunchingSection = () => {
         <div className="bg-[url('/launch/background.svg')] bg-cover bg-center bg-no-repeat md:p-12 p-6 lg:flex lg:flex-row min-h-[550px] rounded-3xl w-full lg:justify-between lg:items-center flex-col flex space-y-6 lg:space-y-0 justify-center items-center">
           <div className='flex flex-col space-y-6 items-start'>
             <div className='flex flex-col'>
-              <h2 className='text-5xl text-[#3A4B4C] font-bold'>Launching</h2>
-              <h2 className='text-5xl text-[#3A4B4C] font-bold '>April 2024</h2>
+              <h2 className='md:text-5xl text-3xl text-[#3A4B4C] font-bold'>
+                Launching
+              </h2>
+              <h2 className='md:text-5xl text-3xl text-[#3A4B4C] font-bold '>
+                April 2024
+              </h2>
             </div>
             <div className='flex flex-col  text-[#3A4B4C]'>
               <p>A new way of renting and booking spaces hour by hour. </p>
