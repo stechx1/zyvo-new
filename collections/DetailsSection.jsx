@@ -3,15 +3,13 @@ import { Button, Container } from '@/components';
 import { poppins } from '@/utils/font';
 import { useRouter } from 'next/navigation';
 
-export const DetailsSection = ({
-  isLoggedIn
-}) => {
+export const DetailsSection = ({ isLoggedIn }) => {
   const router = useRouter();
   return (
     <Container>
       <div
         data-aos='fade-up'
-        className='flex flex-col justify-center items-center md:container container-sm mx-auto gap-8 mt-[-70px] md:mt-0'
+        className='flex flex-col justify-center items-center md:container container-sm mx-auto gap-8 md:mt-0'
       >
         <h2
           className={`md:text-5xl text-[22px] max-w-[815px] font-[500] md:leading-[62px] text-center ${poppins.className}`}
@@ -37,7 +35,7 @@ export const DetailsSection = ({
           </div>
         </div>
         {!isLoggedIn && (
-          <Button onClick={() => router.push("/sign-up")}>
+          <Button onClick={() => router.push('/sign-up')}>
             Create your ZYVO account
           </Button>
         )}

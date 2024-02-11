@@ -49,7 +49,7 @@ export const LaunchingSection = () => {
         data-aos='fade-up'
         className='container mx-auto flex flex-col justify-center items-center gap-8'
       >
-        <div className="bg-[url('/launch/background.svg')] bg-cover bg-center bg-no-repeat md:p-12 p-6 lg:flex lg:flex-row min-h-[550px] rounded-3xl w-[130%] md:w-full lg:justify-between lg:items-center flex-col flex space-y-6 lg:space-y-0 justify-center items-center">
+        <div className="bg-[url('/launch/background.svg')] bg-cover bg-center bg-no-repeat md:p-12 p-6 lg:flex lg:flex-row min-h-[550px] rounded-3xl w-full lg:justify-between lg:items-center flex-col flex space-y-6 lg:space-y-0 justify-center items-center">
           <div className='flex flex-col space-y-6 items-start'>
             <div className='flex flex-col'>
               <h2 className='text-5xl text-[#3A4B4C] font-bold'>Launching</h2>
