@@ -40,10 +40,10 @@ export const Timer = () => {
   return (
     <div className='flex space-x-3 items-center'>
       {/* Days */}
-      <div className='flex min-w-[90px] flex-col space-y-[0.8px]'>
+      <div className='flex md:min-w-[90px] flex-col space-y-[0.8px]'>
         <div className='bg-[#3A4B4C] p-4 rounded-xl rounded-b-none'>
           <h2
-            className={`text-5xl  text-center text-white ${poppins.className}`}
+            className={`md:text-5xl text-3xl text-center text-white ${poppins.className}`}
           >
             {days}
           </h2>
@@ -58,10 +58,10 @@ export const Timer = () => {
       </div>
 
       {/* Hours */}
-      <div className='flex min-w-[90px] flex-col space-y-[0.8px]'>
+      <div className='flex md:min-w-[90px] flex-col space-y-[0.8px]'>
         <div className='bg-[#3A4B4C] p-4 rounded-xl rounded-b-none'>
           <h2
-            className={`text-5xl text-center text-white ${poppins.className}`}
+            className={`md:text-5xl text-3xl text-center text-white ${poppins.className}`}
           >
             {hours}
           </h2>
@@ -76,10 +76,10 @@ export const Timer = () => {
       </div>
 
       {/* Minutes */}
-      <div className='flex min-w-[90px] flex-col space-y-[0.8px]'>
+      <div className='flex md:min-w-[90px] flex-col space-y-[0.8px]'>
         <div className='bg-[#3A4B4C] p-4 rounded-xl rounded-b-none'>
           <h2
-            className={`text-5xl text-center text-white ${poppins.className}`}
+            className={`md:text-5xl text-3xl text-center text-white ${poppins.className}`}
           >
             {minutes}
           </h2>
@@ -94,10 +94,10 @@ export const Timer = () => {
       </div>
 
       {/* Seconds */}
-      <div className='flex w-[90px] flex-col space-y-[0.8px]'>
+      <div className='flex md:w-[90px] flex-col space-y-[0.8px]'>
         <div className='bg-[#3A4B4C] p-4 rounded-xl rounded-b-none'>
           <h2
-            className={`text-5xl text-center text-white ${poppins.className}`}
+            className={`md:text-5xl text-3xl text-center text-white ${poppins.className}`}
           >
             {seconds}
           </h2>

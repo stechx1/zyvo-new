@@ -66,7 +66,7 @@ export const LaunchingSection = () => {
           <div className='md:grid md:grid-cols-3 gap-6 grid grid-cols-2'>
             {types.map((type) => (
               <div
-                className='min-w-[200px] min-h-[200px] p-4 flex items-end rounded-3xl bg-cover bg-center bg-no-repeat'
+                className='md:min-w-[200px] md:min-h-[200px] min-w-[150px] p-4 flex items-end md:rounded-3xl rounded-2xl bg-cover bg-center bg-no-repeat'
                 key={type.id}
                 style={{ backgroundImage: `url(${type.photo})` }}
               >
