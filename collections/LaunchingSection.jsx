@@ -2,9 +2,12 @@ import { Container } from '@/components';
 import { mont, inter } from '@/utils/font';
 import { Button } from '@/components';
 import { Timer } from '@/components/Timer';
+import { useRouter } from 'next/navigation';
 
 /* eslint-disable @next/next/no-img-element */
 export const LaunchingSection = () => {
+  const router = useRouter();
+
   const types = [
     {
       id: 1,
@@ -76,11 +79,15 @@ export const LaunchingSection = () => {
               </p>
             </div>
             <div className='hidden md:block'>
-              <Button type={'outline'}>Register Today</Button>
+              <Button onClick={() => router.push('/sign-up')} type={'outline'}>
+                Register Today
+              </Button>
             </div>
             <Timer />
             <div className='md:hidden'>
-              <Button type={'outline'}>Register Today</Button>
+              <Button onClick={() => router.push('/sign-up')} type={'outline'}>
+                Register Today
+              </Button>
             </div>
           </div>
           {/* Grid */}
