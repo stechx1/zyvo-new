@@ -5,7 +5,7 @@ export const HeroSection = () => {
   return (
     <div
       data-aos='fade-up'
-      className='max-w-[736px] mx-auto text-center space-y-6 py-60 relative'
+      className='max-w-[736px] mx-auto text-center space-y-6 md:pt-60 md:pb-40 pt-60 pb-20 relative'
     >
       <h1
         className={`md:text-7xl text-4xl font-[600] md:leading-[84px] ${poppins.className}`}
