@@ -11,7 +11,7 @@ const AboutPage = () => {
   const router = useRouter();
   return (
     <>
-      <div className='bg-[url("/banner-bg.png")] bg-cover bg-center flex flex-col justify-center items-center '>
+      <div className='bg-[url("/background.svg")] bg-cover bg-center flex flex-col justify-center items-center '>
         <AboutSection />
       </div>
       <div

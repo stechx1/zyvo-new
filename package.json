@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@ant-design/cssinjs": "^1.16.2",
-    "@clerk/nextjs": "^4.23.2",
+    "@clerk/nextjs": "^4.29.7",
     "antd": "^5.8.4",
     "aos": "^2.3.4",
     "autoprefixer": "10.4.15",
