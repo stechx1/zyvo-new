@@ -15,7 +15,7 @@ export default function Home() {
   const { isSignedIn } = useUser();
   return (
     <>
-      <div className='bg-[url("/banner-bg.png")] bg-cover bg-center flex flex-col justify-center items-center '>
+      <div className='bg-[url("/background.svg")] bg-cover bg-center flex flex-col justify-center items-center '>
         <HeroSection />
       </div>
       <div className='md:space-y-28 space-y-12'>

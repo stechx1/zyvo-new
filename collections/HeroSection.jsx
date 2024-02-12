@@ -34,7 +34,7 @@ export const HeroSection = () => {
           alt='home'
         />
 
-        <img
+        {/* <img
           src='/tilt-img1.png'
           alt='tilt'
           className='absolute lg:hidden w-[110px] bottom-[105px] right-[22px] '
@@ -43,7 +43,7 @@ export const HeroSection = () => {
           src='/tilt-img2.png'
           alt='img2'
           className='absolute lg:hidden w-[110px] top-[28px] left-[32px]'
-        />
+        /> */}
       </div>
     </div>
   );
