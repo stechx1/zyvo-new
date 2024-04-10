@@ -61,7 +61,7 @@ export const LaunchingSection = () => {
                 Launching
               </h2>
               <h2 className='md:text-5xl text-2xl text-[#3A4B4C] font-bold '>
-                April 2024
+                August 2024
               </h2>
             </div>
             <div
